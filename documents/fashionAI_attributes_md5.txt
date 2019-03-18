@@ -1,0 +1,8 @@
+fashionAI_attributes_train1.zip
+a89500e08196470b261d3cd7ab1a8087
+
+fashionAI_attributes_train2.zip
+fc6d1eb704225a7e1e48f354ff2b7ab2
+
+fashionAI_attributes_test.zip
+c5136cabe7a3178c4af8131f293ac69a
