@@ -6,6 +6,7 @@ __pycache__/
 # exclude data from source control by default
 /data/
 /saved_models/
+/images/
 
 # C extensions
 *.so

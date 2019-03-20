@@ -25,31 +25,38 @@ def get_image_tensor(img_path):
     return img_tensor
 
 
-def get_dense_layer(model, img_path):
-    """Get calculations at the requested layer in CNN"""
-    img_tensor = get_image_tensor(img_path)
+# def get_dense_layer(model, img_path):
+#     """Get calculations at the requested layer in CNN"""
+#     img_tensor = get_image_tensor(img_path)
 
-    # Creates a model that will return these outputs, given the model input
-    activation_model = Model(inputs=model.input, outputs=model.get_layer('vectors').output)
+#     # Creates a model that will return these outputs, given the model input
+#     activation_model = Model(inputs=model.input, outputs=model.get_layer('vectors').output)
 
-    # Returns a list of Numpy arrays: one array per layer activation
-    activation = activation_model.predict(img_tensor)
+#     # Returns a list of Numpy arrays: one array per layer activation
+#     activation = activation_model.predict(img_tensor)
 
-    return activation[0]
+#     return activation[0]
 
 
-def all_dense_data(model, paths_list):
+def get_dense_layers(model, paths_list):
     """Returns a matrix of all calculations in list of paths
     and a dataframe with the path as the index."""
-    dense_outputs = []
-    dense_dict = {}
-
-    for path in paths_list:
-        dense_layer = get_dense_layer(model, path)
-        dense_outputs.append(dense_layer)
-        dense_dict[path] = dense_layer
-        
-    outputs_df = pd.DataFrame(dense_dict)
     
-    return np.array(dense_outputs), outputs_df.T
+    input_tensors = [get_image_tensor(filename) for filename in paths_list]
+    activation_model = Model(inputs=model.input, outputs=model.get_layer('vectors').output)
+    output = activation_model.predict(np.array(input_tensors).reshape(-1, 224, 224, 3))  
+    outputs_df = pd.DataFrame(output, index=paths_list)
+    return output, outputs_df
+    
+#     dense_outputs = []
+#     dense_dict = {}
+
+#     for path in paths_list:
+#         dense_layer = get_dense_layer(model, path)
+#         dense_outputs.append(dense_layer)
+#         dense_dict[path] = dense_layer
+        
+#     outputs_df = pd.DataFrame(dense_dict)
+    
+#     return np.array(dense_outputs), outputs_df.T
 
