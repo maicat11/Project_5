@@ -29,7 +29,7 @@ def view_nn_images(df, indices):
     plt.axis('off');
 
 
-def view_images(path1, path2):
+def view_two_images(path1, path2):
     plt.figure(figsize=(10,10))
 
     plt.subplot(1,2,1)
@@ -43,3 +43,13 @@ def view_images(path1, path2):
     plt.imshow(im);
     plt.title('Shoe Item')
     plt.axis('off');
+    
+
+def view_one_image(path):
+    plt.figure(figsize=(10,10))
+
+    plt.subplot(1,2,1)
+    im = mpimg.imread(path)
+    plt.imshow(im);
+    plt.title('Your Item')
+    plt.axis('off')    
