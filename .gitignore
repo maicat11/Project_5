@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+color-extractor/
 
 # exclude data from source control by default
 /data/
