@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    RECOMMENDATIONS
+{% endblock %}
+
+{% block body %}
+<div class="recommendation_container">
+  <div class="original_image_container">
+    <h2>Your image:</h2>
+    <div style="width: 50%; display: inline">
+      <img src="{{ file }}" width="100%"/>
+    </div>
+  </div>
+
+    <div class="recommendations_container">
+      <div class="recommendations_anchor">
+        <table class="rec_table">
+          <tr>
+            <td class="left_col top_row"><img src="{{ shoes[0] }}" alt="Shoe1" ></td>
+            <td class="top_row"><img src="{{ shoes[1] }}" alt="Shoe2" ></td>
+          </tr>
+          <tr>
+            <td class="left_col"><img src="{{ shoes[2] }}" alt="Shoe3" ></td>
+            <td><img src="{{ shoes[3] }}" alt="Shoe4" ></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+      <a href="{{ url_for('index') }}" class="button">Back to home page</a>
+{% endblock %}
