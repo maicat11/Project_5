@@ -35,7 +35,7 @@ I found an achitecture very similar in a tutorial I did from "Deep Learning usin
 
 As for the images of shoes, initially these were classifying at 85% accuracy based on 7 categories (sandal, ankle boot, etc.), but a decision was made later in the project to add a color component since many of the clothing items were differentiated this way (blue jeans, black dress, etc.). SO it made sense to also categorize shoe by 8 colors and 7 styles which inflated the categories to 56.  The resulted in the accuracy dropping to 70%, but again good enough since this was not the final result of the project.  
 
-![image-20190327114057037](/Users/maileivargas/Library/Application%20Support/typora-user-images/image-20190327114057037.png)
+![Screen Shot 2019-05-15 at 1 04 00 PM](https://user-images.githubusercontent.com/20651507/57805530-fa5c1980-7711-11e9-9fcb-37715c9d9b72.png)
 
 ​                     This shoe above initially was categorized as *sandal*, but later based on the RGB 
 
