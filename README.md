@@ -28,7 +28,8 @@ Once the data was "cleaned" and organized into categories the next steps were bu
 
 I found an achitecture very similar in a tutorial I did from "Deep Learning using Python", and made a few tweaks trying the get an understanding of what is going on.  When the classification for the clothing came back as 80% accuracy, I did not feel the need to attempt transfer learning since classification of clothing is not my end result.  I felt that 80% was good enough.  Below is the convergence of the training and validation set. 
 
-![image-20190327120513015](/Users/maileivargas/Library/Application%20Support/typora-user-images/image-20190327120513015.png)
+![Screen Shot 2019-05-15 at 1 01 18 PM](https://user-images.githubusercontent.com/20651507/57805403-a94c2580-7711-11e9-974d-bdde50ea4319.png)
+
 
 **Color addition**
 
