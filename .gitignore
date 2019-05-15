@@ -8,9 +8,14 @@ color-extractor/
 /data/
 /saved_models/
 /images/
+/webapp/static/shoes/
+/webapp/static/theme/
+/webapp/static/uploads/
 
 # C extensions
 *.so
+*.pickle
+*.key
 
 # Distribution / packaging
 .Python
