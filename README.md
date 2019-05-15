@@ -22,7 +22,7 @@ For my recommendation system, I collected 4500+ images from Google API and 50k Z
 
 Once the data was "cleaned" and organized into categories the next steps were building a convolutional neural network (CNN) in order to train the model to correctly classify the images as the category they belonged to.  This was done by building an architechture of 12 layers in which I could feed in both the clothing images and the shoe images.  Below is the layers and architecture. 
 
-![image-20190327115339055](/Users/maileivargas/Library/Application%20Support/typora-user-images/image-20190327115339055.png)
+![Screen Shot 2019-05-15 at 12 58 45 PM](https://user-images.githubusercontent.com/20651507/57805219-5a9e8b80-7711-11e9-93fc-5646caecad53.png)
 
   
 
