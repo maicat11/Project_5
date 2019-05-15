@@ -41,15 +41,13 @@ As for the images of shoes, initially these were classifying at 85% accuracy bas
 
 ​                     average of the of the image, its nearest color neighbor was *charcoal*, a color I 
 
-​                     chose as a representation of black.  
+​                     chose as a representation of black.    
+
 
 
 
 Once I had the training completed for each image, I extracted the dense layer called *vectors* (as highlighted above) and stored them in a dataframe with the path to the image as the unique identifier.  Each vector had length of 300 output and these are the features of the images at the layer prior to the prediction (not accounting for the dropout).      
 
-![image-20190327120831507](/Users/maileivargas/Library/Application%20Support/typora-user-images/image-20190327120831507.png)
-
-![image-20190327120844883](/Users/maileivargas/Library/Application%20Support/typora-user-images/image-20190327120844883.png)
-
+![Screen Shot 2019-05-15 at 1 07 36 PM](https://user-images.githubusercontent.com/20651507/57805764-76eef800-7712-11e9-8627-a34c07599d59.png)
 
 
